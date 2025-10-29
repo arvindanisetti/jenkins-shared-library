@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(String mavenGoals = 'mvn clean') {
+def call{
     echo "Building with Maven: ${mavenGoals}"
-    sh "mvn ${mavenGoals}"
+    sh "mvn clean install"
 }
